@@ -61,9 +61,8 @@ public class MainActivity extends AppCompatActivity {
                                        View view,
                                        int position,
                                        long id) {
-                String[] countries = getResources().getStringArray(R.array.countries);
                 initSpinnerCities(position);
-                Log.i(TAG, "Выбрана позиция: " + position);
+                Log.i(TAG, getString(R.string.log_position) + position);
             }
 
             @Override
@@ -101,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 1; i <= 50; i++) {
             houseNumbers[i - 1] = i;
         }
-        ArrayAdapter<Integer> adapterHouseNumber = new ArrayAdapter<Integer>(this,
+        ArrayAdapter<Integer> adapterHouseNumber = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_dropdown_item,
                 houseNumbers);
         mHouseNumberSpinner.setAdapter(adapterHouseNumber);

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Delivery</string>
     <string name="showAddress">Показать адрес</string>
+    <string name="log_position">Выбрана позиция:</string>
+
 
     <string-array name="countries">
         <item>Россия</item>
