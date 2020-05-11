@@ -72,18 +72,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void initSpinnerCities(int position) {
+    public void initSpinnerCities(@CountryIntDef int position) {
         ArrayAdapter<CharSequence> adapter;
         switch (position) {
-            case 0:
+            case CountryIntDef.RUS:
                 adapter = ArrayAdapter.createFromResource(this, R.array.r_cities,
                         android.R.layout.simple_spinner_item);
                 break;
-            case 1:
+            case CountryIntDef.UKR:
                 adapter = ArrayAdapter.createFromResource(this, R.array.u_cities,
                         android.R.layout.simple_spinner_item);
                 break;
-            case 2:
+            case CountryIntDef.BLR:
                 adapter = ArrayAdapter.createFromResource(this, R.array.b_cities,
                         android.R.layout.simple_spinner_item);
                 break;
